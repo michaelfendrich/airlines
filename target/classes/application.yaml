@@ -1,0 +1,18 @@
+server.port: 8080
+
+swagger.enabled: true
+springfox.documentation.swagger.v2.path: /swagger/v2/api-docs
+
+spring:
+  jpa:
+    open-in-view: true
+    hibernate:
+      ddl-auto: update
+
+spring.datasource:
+  url: jdbc:mysql://localhost/airlines
+  username: root
+  password:
+  driver-class-name: com.mysql.cj.jdbc.Driver
+
+spring.jackson.mapper.ACCEPT_CASE_INSENSITIVE_ENUMS: true

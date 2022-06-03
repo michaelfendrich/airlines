@@ -1,0 +1,17 @@
+.button {
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+input[type=number], input[type=date] {
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+body {
+	margin-left: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(235, 235, 235);
+}

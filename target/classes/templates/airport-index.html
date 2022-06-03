@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" th:href="@{/css/style99.css}" type="text/css">
+    <title>Airports</title>
+</head>
+<body>
+<h1>FIND AIRPORT</h1>
+<form action="#" th:action="@{/airport-result}" th:object="${airport}" method="post">
+    IATA Airport Code: <input type="text" th:field="*{code}"></br>
+    Date: <input type="date" th:field="*{date}"></br>
+    <input type="submit" class="button" value="Submit">
+    <input type="reset" class="button" value="Reset"></br>
+    <a href="/flights">Find Flights</a>
+</form>
+</body>
+</html>

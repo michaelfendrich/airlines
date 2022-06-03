@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/style99.css}" type="text/css">
+    <title>Title</title>
+</head>
+<body>
+<h1>RESULT</h1>
+<p th:text="'Flight number: ' + ${form.flightNumber}"></p>
+<P th:text="'Date and Time: ' + ${form.dateAndTime}"></P>
+<p th:text="'Cargo Weight: ' + ${form.kgCargoWeight} + ' Kg (' + ${form.lbCargoWeight} + ' lb)'"></p>
+<p th:text="'Baggage Weight: ' + ${form.kgBaggageWeight} + ' Kg (' + ${form.lbBaggageWeight} + ' lb)'"></p>
+<p th:text="'Total Weight: ' + ${form.kgTotalWeight} + ' Kg (' + ${form.lbTotalWeight} + ' lb)'"></p>
+<a href="/flights">Back</a>
+</body>
+</html>
