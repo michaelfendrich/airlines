@@ -10,7 +10,7 @@
 <form action="#" th:action="@{/flight-result}" th:object="${flight}" method="post">
     Flight number: <input type="number" th:field="*{flightNumber}" /><br />
     Date: <input type="date" th:field="*{dateOfFlight}"/></br>
-    <input type="submit" class="button" value="Submit">
+    <input type="submit" class="button" value="Submit"></br>
     <a href="/airport">Find Airport</a>
 </form>
 </body>

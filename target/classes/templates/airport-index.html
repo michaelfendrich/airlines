@@ -10,8 +10,7 @@
 <form action="#" th:action="@{/airport-result}" th:object="${airport}" method="post">
     IATA Airport Code: <input type="text" th:field="*{code}"></br>
     Date: <input type="date" th:field="*{date}"></br>
-    <input type="submit" class="button" value="Submit">
-    <input type="reset" class="button" value="Reset"></br>
+    <input type="submit" class="button" value="Submit"></br>
     <a href="/flights">Find Flights</a>
 </form>
 </body>
